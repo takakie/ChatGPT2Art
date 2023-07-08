@@ -22,5 +22,6 @@
 
 ### 1.5.API接口文档
   pandora chatgpt 代理接口，可突破限制，https://github.com/pengzhile/pandora/blob/master/doc/HTTP-API.md
+  
   本地stable diffusion 接口文档地址 http://127.0.0.1:7860/docs
   
