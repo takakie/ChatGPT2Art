@@ -3,14 +3,15 @@ import re
 from gpt_api import ImageDescriptionGenerator
 from sd_api import MessageToImageProcessor
 
+# 定义配置文件路径
 config = "config.json"
+# 加载GPT模块
 generator = ImageDescriptionGenerator(config)
 generator.model = "gpt-3.5"
+# 加载stable diffusion模块
 sd = MessageToImageProcessor(config)
-sd.cfg_scale = 10
 sd.height = 720
 sd.width = 500
-
 
 
 while 1:
