@@ -7,8 +7,9 @@ config = "config.json"
 generator = ImageDescriptionGenerator(config)
 generator.model = "gpt-3.5"
 sd = MessageToImageProcessor(config)
-sd.height = 1024
-sd.width = 720
+sd.cfg_scale = 10
+sd.height = 720
+sd.width = 500
 
 
 

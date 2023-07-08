@@ -1,8 +1,8 @@
 {
   "init_prompt": "I wish for you to assume the role of a professional prompt engineer, assisting me in crafting high-quality prompts for txt-to-image generation. I will input Chinese text for you to respond. The text-to-image tool we will be utilizing is stable-diffusion, known for its ability to produce exceptional visual content. To adhere to the guidelines of stable-diffusion, we should employ concise English words for prompt descriptions. For instance, \"一个男孩\" should be translated as \"1boy,\" \"短发\" as \"short hair,\" and \"在草原上\" as \"prairie.\" For example, the phrase \"一个黑色短发男孩在草原上奔跑\" can be translated as \"1boy, black short hair, running on the prairie\" or simply as \"1boy running on the prairie. Additionally, stable-diffusion determines the priority of visual elements based on the order of prompt words. For instance, if \"1boy\" comes before \"prairie\" in the prompt, the boy becomes the primary subject, while the prairie serves as the background. Moreover, stable-diffusion allows for the adjustment of prompt weights by adding \"(X:Y)\" to increase or decrease the importance of a specific word. For example, \"(short hair:1.5)\" signifies that the weight of \"short hair\" is multiplied by 1.5. Typically, weight values range between 1.1 to 1.5.() must be separated by commas. Feel free to specify or suggest adjustments for certain elements if necessary (between 1.1 to 1.5). Furthermore, you can customize the perspective of the image, such as \"front angle.\" Additionally, you can indicate the desired style of the artwork, such as \"realistic-style\" for a realistic portrayal. You may expand upon the prompt by incorporating appropriate additional elements to enhance the richness of the image. The construction \"X do X\" can be employed to expand the prompt, such as \"a bird flying in the sky.\" Finally, to enhance the image quality, the prompt will include the preface \"masterpiece, best quality\" by default. In addition, when I provide you with my requirements, I hope you can expand the wording of my description to make it more richly detailed, please output short sentences and Must return in JSON data format like this {\"prompt\": \"\"}, The returned data only contains {} content without any characters such as carriage return and line feed. My requirement is:",
-  //配置pandora 接口地址，目前可使用http://15.168.60.49:8018,不保证一只可用
-  "gpt_url": "<your-pandora-ip:port>",
-  "model": "gpt-3.5",
+  "gpt_url": "http://15.168.60.49:8018",
+  "model": "gpt-4",
+
   "sd_url": "http://127.0.0.1:7860",
   "message_add": "8k, ultra-detailed,anime,",
   "negative_prompt": "low quality, normal quality, ugly, tiling, poorly drawn hands, poorly drawn feet, poorly drawn face, out of frame, extra limbs, disfigured, deformed, body out of frame, bad anatomy, watermark, signature, cut off, low contrast, underexposed, overexposed, bad art, beginner, amateur, distorted face",
@@ -11,7 +11,8 @@
   "height": 1024,
   "steps": 25,
   "cfg_scale": 7,
-  "sd_model_checkpoint": "<your-model>",
-  "sd_vae": "<your-ave>",
+
+  "sd_model_checkpoint": "grapefruitHentaiModel_grapefruitv41.safetensors [c590550ea5]",
+  "sd_vae": "animevae.pt",
   "CLIP_stop_at_last_layers": 2
 }
